@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Encore Fitness Studio</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <style>
+    /* Hide everything except the SVG */
+    header, footer, nav, .mobile-nav, .header-left, .header-right {
+      display: none;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000; /* Optional: match Figma background */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .frame-container img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <!-- Only visible content -->
+  <div class="frame-container">
+    <img src="Frame 1.svg" alt="Encore Fitness Studio Layout" />
+  </div>
+
+  <!-- Hidden nav bar structure -->
+  <header>
+    <div class="header-left">
+      <a href="#" class="menu-open hide-desktop">
+        <img src="nav bar.svg" alt="Navigation Menu" />
+      </a>
+      <nav class="hide-mobile">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a href="index.html">
+        <img src="Logo.svg" alt="Encore Gym Logo" />
+      </a>
+    </div>
+    <nav class="mobile-nav hide-desktop">
+      <a href="#" class="menu-close">✕ Close</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hidden footer structure -->
+  <footer>
+    <div class="footer-social">
+      <p>Follow us:</p>
+      <div class="social-icons">
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+          <img src="Instagram.svg" alt="Instagram" />
+        </a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+          <img src="Twitter.svg" alt="Twitter" />
+        </a>
+        <a href="https://tiktok.com" target="_blank" aria-label="TikTok">
+          <img src="Tiktok.svg" alt="TikTok" />
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
