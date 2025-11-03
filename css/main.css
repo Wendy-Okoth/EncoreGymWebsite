@@ -1,15 +1,29 @@
+
+header,
+footer,
+nav,
+.mobile-nav,
+.header-left,
+.header-right {
+  display: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  overflow-y: auto;
+}
+
 .frame-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+  width: 100%;
+  display: block;
 }
 
 .frame-container img {
   width: 100%;
-  height: 100%;
-  object-fit: cover; /* or 'contain' if you want full visibility */
+  height: auto;
   display: block;
+  margin: 0;
+  padding: 0;
 }
